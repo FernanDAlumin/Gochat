@@ -1,0 +1,63 @@
+.conversation-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid #ddd;
+}
+
+.conversation-list-header {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+.conversation-list-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.conversation-items {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.conversation-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.conversation-item:hover {
+  background-color: #f9f9f9;
+}
+
+.conversation-item.active {
+  background-color: #e6f7ff;
+}
+
+.conversation-title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.conversation-preview {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+
+.conversation-time {
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+
+.no-conversations {
+  padding: 20px;
+  color: #999;
+  text-align: center;
+}

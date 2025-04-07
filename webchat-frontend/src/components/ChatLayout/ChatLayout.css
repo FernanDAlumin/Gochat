@@ -1,0 +1,84 @@
+.chat-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  min-width: 250px; /* 设置最小宽度 */
+  max-width: 400px; /* 设置最大宽度，防止过大 */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* 确保占满剩余空间 */
+  padding: 0; /* 移除可能的内边距 */
+  overflow: hidden; /* 防止滚动条出现 */
+}
+
+.new-conversation-button {
+  padding: 15px;
+  text-align: center;
+  background-color: #1890ff;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.new-conversation-button:hover {
+  background-color: #40a9ff;
+}
+
+.resizer {
+  width: 8px;
+  cursor: col-resize;
+  background-color: #f0f0f0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  z-index: 10;
+}
+
+.resizer:hover, .resizer:active {
+  background-color: #ddd;
+}
+
+/* 添加响应式设计 */
+@media (max-width: 768px) {
+  .sidebar {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100% !important; /* 覆盖内联样式 */
+    height: 40%;
+    min-height: 200px;
+    max-width: none;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .resizer {
+    width: 100%;
+    height: 8px;
+    cursor: row-resize;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+  }
+}

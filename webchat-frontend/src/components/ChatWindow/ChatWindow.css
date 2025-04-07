@@ -1,0 +1,22 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; /* 确保宽度占满父容器 */
+  overflow: hidden;
+  /* 移除可能导致内容不占满的边框 */
+  border: none;
+  border-radius: 0;
+}
+
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%; /* 确保头部宽度占满 */
+}
+
+.chat-header h2 {
+  margin: 0;
+}

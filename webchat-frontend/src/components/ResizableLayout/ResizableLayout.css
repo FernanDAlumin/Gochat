@@ -1,0 +1,54 @@
+.resizable-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.resizable-sidebar {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.resizable-content {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.resizer {
+  width: 8px;
+  cursor: col-resize;
+  background-color: #f0f0f0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  z-index: 10;
+}
+
+.resizer:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 480px) {
+  .resizable-layout {
+    flex-direction: column;
+  }
+
+  .resizable-sidebar {
+    width: 100% !important; /* 覆盖内联样式 */
+    height: 40%;
+  }
+
+  .resizer {
+    width: 100%;
+    height: 8px;
+    cursor: row-resize;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+  }
+}

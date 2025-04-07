@@ -1,0 +1,13 @@
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #e5ddd5;
+  width: 100%; /* 确保宽度占满 */
+}
+
+.no-messages {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}

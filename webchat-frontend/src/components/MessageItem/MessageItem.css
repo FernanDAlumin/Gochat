@@ -1,0 +1,31 @@
+.message-item {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%; /* 确保最大宽度 */
+}
+
+.message-content {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  /* 你可以适当增加宽度 */
+  width: auto;
+}
+
+.own-message {
+  justify-content: flex-end;
+}
+
+.own-message .message-content {
+  background-color: #dcf8c6;
+}
+
+.message-time {
+  display: block;
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 4px;
+  text-align: right;
+}

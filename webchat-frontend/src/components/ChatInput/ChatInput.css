@@ -1,0 +1,30 @@
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+  width: 100%; /* 确保宽度占满 */
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px; /* 确保与发送按钮有间距 */
+}
+
+.send-button {
+  min-width: 80px; /* 给按钮一个合理的最小宽度 */
+  padding: 8px 16px;
+  background-color: #075e54;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #128c7e;
+}
